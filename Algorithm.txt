@@ -1,0 +1,13 @@
+Problem :
+If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total. If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used? NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
+
+Solution:
+
+Firstly, I created an array from 0 to 19 along with their length because we can see that they don't have common pattern between them. Then I created another array of 10th multiple starting from 20 to 90 as we can see common 10 common in them. 
+
+Function named below100 is used to calculate our desired output for number between 0 and 99. There are two cases like n<20 then we have array defined else we can use both array and determine length for desired output
+
+Function named number length is used to calculate the length of number between 100 and 1000. Some mathematical portion is done if there is number >= 100 
+String "and" is added if there is number like for example 548 Five hundred and fourty-eight.
+
+Finally, final_solution function provides us result by using for loop.
