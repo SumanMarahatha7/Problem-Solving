@@ -77,4 +77,4 @@ function final_solution(n) {
 }
 
 //calling function with value n = 500
-solution(500);
+final_solution(500);
