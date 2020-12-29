@@ -41,9 +41,9 @@ var tenth = [
 function below100(n) {
 
   if (n < 20)
-    return proper[n];
+    return upto_nineteen[n];
 
-  return tenth[n / 10 - 2 | 0] + proper[n % 10];
+  return tenth[n / 10 - 2 | 0] + upto_nineteen[n % 10];
 }
 
 // function for number between 100 and 1000
