@@ -60,7 +60,7 @@ function numberLength(n) {
   if (n > 999)
     result+= below100(tens_place) + "thousand".length;
   if (h !== 0)
-    result+= proper[hundred_place] + "hundred".length;
+    result+= below100(hundred_place) + "hundred".length;
   if (s !== 0)
     result+= "and".length + below100(s);
   return result;
